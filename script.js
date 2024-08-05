@@ -28,6 +28,10 @@ document.getElementById('searchButton').addEventListener('click', function() {
     searchOnline(isbnInput);
 });
 
+document.getElementById('themeSwitch').addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode', this.checked);
+});
+
 function validateISBN() {
     const isbnInput = document.getElementById('isbn').value;
     const resultElement = document.getElementById('result');
