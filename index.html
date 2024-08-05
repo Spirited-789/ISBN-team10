@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISBN Validator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="title"><h1>ISBN VALIDATOR</h1></div>
+        <div class="topnav" id="myTopnav">
+            <a href="#home">Home</a>
+            <a href="#directories">Directories</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>ISBN Validator</h1>
+        <form id="isbnForm">
+            <label for="isbn">Enter ISBN:</label>
+            <input type="text" id="isbn" name="isbn" required>
+            <button type="submit">Validate</button>
+            <button type="button" id="clearButton">Clear</button>
+        </form>
+        <p id="result"></p>
+        <div id="loading" style="display: none;">Validating...</div>
+        <button type="button" id="searchButton">Search Online</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
